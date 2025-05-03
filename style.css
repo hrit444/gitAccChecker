@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #252529;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0;
+}
+main .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8vw;
+}
+main .top i {
+  font-size: 10vw;
+}
+main .top .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5vw;
+}
+main .top .heading h1 {
+  font-size: 3vw;
+  font-weight: 400;
+}
+main .top .heading h6 {
+  width: 70%;
+  font-size: 1vw;
+  font-weight: 100;
+  text-align: center;
+}
+main form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin: 3vw 0;
+}
+main form input {
+  background-color: #3b3b3f;
+  border: none;
+  width: 60%;
+  font-size: 1.2vw;
+  padding: 1vw 2vw;
+  border-radius: 50px;
+}
+main form #btn1 {
+  width: 20%;
+  background-color: rgb(2, 119, 244);
+}
+main form #btn1:hover {
+  scale: 1.04;
+  transition: 0.1s linear all;
+}
+main .account {
+  height: 50vw;
+  width: 58%;
+  background-color: #3b3b3f;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+main .account h1 {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .account .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1vw;
+}
+main .account .content .left {
+  padding: 0 1vw;
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .account .content .left .picture {
+  height: 10vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .account .content .left .picture img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-repeat: none;
+}
+main .account .content .left .infos {
+  margin-top: 1vw;
+  width: 100%;
+}
+main .account .content .left .infos h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+main .account .content .left .infos h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.2vw;
+  font-size: 1vw;
+  font-weight: 300;
+  opacity: 0.8;
+}
+main .account .content .left .infos h4 span {
+  font-size: 1.2vw;
+}
+main .account .content .left button {
+  margin-top: 4vw;
+  background-color: #0177f4;
+  border: none;
+  width: 100%;
+  font-size: 1vw;
+  text-transform: uppercase;
+  padding: 0.7vw 1.2vw;
+  border-radius: 50px;
+}
+main .account .content .left button:hover {
+  scale: 1.04;
+  transition: 0.1s linear all;
+}
+main .account .content .line {
+  height: 100%;
+  width: 1.5px;
+  background-color: #838383;
+  margin: 0 1vw;
+}
+main .account .content .right {
+  background-color: #313135;
+  height: 100%;
+  width: 65%;
+  padding: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow: scroll;
+  border-radius: 10px;
+  gap: 1vw;
+}
+main .account .content .right .repo {
+  background-color: #252529;
+  width: 48%;
+  min-height: 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vw;
+  border-radius: 10px;
+}
+main .account .content .right .repo h3 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+main .account .content .right .repo .r-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main .account .content .right .repo .r-bottom .left {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+main .account .content .right .repo .r-bottom .left .language,
+main .account .content .right .repo .r-bottom .left .star {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+main .account .content .right .repo .r-bottom .left .language .dot,
+main .account .content .right .repo .r-bottom .left .star .dot {
+  height: 0.5vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: gold;
+  margin: 0 0.2vw;
+}
+main .account .content .right .repo .r-bottom .left .language h4,
+main .account .content .right .repo .r-bottom .left .star h4 {
+  font-size: 0.9vw;
+  font-weight: 300;
+}
+main .account .content .right .repo .r-bottom .left .language i,
+main .account .content .right .repo .r-bottom .left .star i {
+  font-size: 1vw;
+}
+main .account .content .right .repo .r-bottom button {
+  background-color: #0177f4;
+  font-size: 1vw;
+  padding: 0 1.5vw;
+  border-radius: 50px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
